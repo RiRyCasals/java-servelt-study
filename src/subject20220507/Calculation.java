@@ -1,4 +1,4 @@
-package subject20220521;
+package subject20220507;
 
 public class Calculation {
     // 今月の元本と利息の合計 = 前月の元本と利息の合計 + 1ヶ月分の金利

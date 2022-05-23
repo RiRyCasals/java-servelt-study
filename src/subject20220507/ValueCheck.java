@@ -1,4 +1,4 @@
-package subject20220521;
+package subject20220507;
 
 public class ValueCheck {
     private static int argumentsNum = 3;
