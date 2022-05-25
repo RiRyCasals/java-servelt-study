@@ -8,9 +8,10 @@
     <servlet-name>HelloServlet</servlet-name> <!-- フォルダ名兼アプリ名，ここは同じ -->
     <servlet-class>HelloServlet</servlet-class> <!-- クラス名 -->
   </servlet>
-
+<!--
   <servlet-mapping>
-    <servlet-name>HelloServlet</servlet-name> <!-- フォルダ名兼アプリ名，ここは同じ -->
-    <url-pattern>/Hello</url-pattern> <!-- .javaに記述したルーティング名 -->
+    <servlet-name>HelloServlet</servlet-name> フォルダ名兼アプリ名，ここは同
+    <url-pattern>/testRouting</url-pattern>   .javaに記述したルーティング名
   </servlet-mapping>
+-->
 </web-app>

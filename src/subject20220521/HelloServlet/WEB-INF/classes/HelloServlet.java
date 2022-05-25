@@ -4,7 +4,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.annotation.WebServlet;
 
+/* web.xml の servlet-mapping の記述がいらない
+ * 両方記述されている場合 xml が優先されるっぽい
+ * 両方記述されている場合 .java で記述したルーティングにアクセスしようとするとエラーになる
+ */
+@WebServlet("/Hello")
 public class HelloServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws IOException, ServletException {
