@@ -1,1 +1,1 @@
-docker build . -t tech-java:latest
+docker build . -t tech-java:normal
