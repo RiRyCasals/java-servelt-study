@@ -4,12 +4,25 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <form action="/Sample/FormSampleServlet" method="POST">
-            名前：<input type="text" name="name">
-            性別：
-            男<input type="radio" name="gender" value="0">
-            女<input type="radio" name="gender" value="1"><br>
-            <input type="submit" value="送信">
-        </form>
+        <fieldset>
+            <legend>Servlet</legend>
+            <form action="/Sample/FormSampleServlet" method="POST">
+                名前：<input type="text" name="name">
+                性別：
+                男<input type="radio" name="gender" value="0">
+                女<input type="radio" name="gender" value="1"><br>
+                <input type="submit" value="送信">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>JSP</legend>
+            <form action="/Sample/jsp/formSample.jsp" method="POST">
+                名前：<input type="text" name="name">
+                性別：
+                男<input type="radio" name="gender" value="0">
+                女<input type="radio" name="gender" value="1"><br>
+                <input type="submit" value="送信">
+            </form>
+        </fieldset>
     </body>
 </html>
