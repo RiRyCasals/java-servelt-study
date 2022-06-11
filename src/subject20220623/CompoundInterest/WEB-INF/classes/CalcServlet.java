@@ -27,11 +27,16 @@ public class CalcServlet extends HttpServlet {
         String year = request.getParameter("year");
 
         CalcCheck checker = new CalcCheck();
-        boolean isCatchError = checker.checkError(principal, rate, year);
-        if (isCatchError) {
+        //boolean isCatchError = checker.checkError(principal, rate, year);
+        int errorFlag = checker.checkError(principal, rate, year);
+        if (errorFlag != 0) {
+            CalcResultBean bean = new CalcResultBean();
+            bean.setErrorFlag(errorFlag);
+            request.setAttribute("error", bean);
             RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/error.jsp");
             dispatcher.forward(request, response);
         }
+
         CalcResultBean bean = new CalcResultBean();
         bean.setPrincipal(Integer.parseInt(principal));
         bean.setRate(Integer.parseInt(rate));

@@ -3,7 +3,7 @@ package compoundInterest;
 import java.io.Serializable;
 
 public class CalcResultBean implements Serializable {
-    private int principal, rate, year, total;
+    private int principal, rate, year, total, errorFlag;
     private int[] compoundInterestList;
 
     public void setPrincipal(int principal) {this.principal= principal;}
@@ -20,4 +20,7 @@ public class CalcResultBean implements Serializable {
 
     public void setTotal(int total) {this.total = total;}
     public int getTotal() {return total;}
+
+    public void setErrorFlag(int errorFlag) {this.errorFlag = errorFlag;}
+    public int getErrorFlag() {return errorFlag;}
 }
