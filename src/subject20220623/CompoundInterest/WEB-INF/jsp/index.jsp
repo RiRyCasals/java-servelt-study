@@ -4,10 +4,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>福利計算プログラム</title>
+        <title>複利計算プログラム</title>
     </head>
     <body>
-        <h1>福利計算プログラム</h1>
+        <h1>複利プログラム</h1>
         <p>データを入力してください</p>
         <form action="/CompoundInterest/calc" method="POST">
             元本：<input type="text" name="principal"><br>

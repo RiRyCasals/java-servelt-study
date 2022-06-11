@@ -11,7 +11,7 @@ int[] list = compoundInterest.getCompoundInterestList();
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>福利計算プログラム</title>
+        <title>複利プログラム</title>
     </head>
     <body>
         <h1>計算結果</h1>

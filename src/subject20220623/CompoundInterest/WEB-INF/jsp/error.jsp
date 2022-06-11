@@ -11,7 +11,7 @@ int errorFlag =  compoundInterest.getErrorFlag();
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>福利計算プログラム</title>
+        <title>複利計算プログラム</title>
     </head>
     <body>
         <h1>入力エラー</h1>
